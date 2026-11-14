@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Slack Water Brandkit</title>
-<meta name="description" content="Brand guidelines board for Slack Water, a tide-tables brand. Pure HTML, CSS and inline SVG. No JavaScript, no images.">
+<meta name="description" content="Brand guidelines board for Slack Water, a tide app. Pure HTML, CSS and inline SVG. No JavaScript, no images.">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,6 +163,10 @@ svg{display:block}
 #v1:focus-visible ~ .dots label[for=v1],#v2:focus-visible ~ .dots label[for=v2],#v3:focus-visible ~ .dots label[for=v3]{outline:2px solid var(--navy);outline-offset:2px}
 
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:28px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fog)}
+/* Repo link: looks like the footer text at rest; 24px hit area via padding offset by margin, so layout is unchanged. */
+.footlink{color:inherit;text-decoration:none;padding:6px 0;margin:-6px 0;border-radius:2px}
+.footlink:hover{text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:1px}
+.footlink:focus-visible{outline:2px solid var(--ivory);outline-offset:3px}
 
 /* Paper grain */
 .grain{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50;mix-blend-mode:overlay;opacity:.32}
@@ -439,7 +443,7 @@ svg{display:block}
   </div>
 
   <footer class="foot">
-    <span>Slack Water &mdash; Brand guidelines 1.0</span>
+    <a class="footlink" href="https://github.com/ericthayer/slack-water">Slack Water &mdash; Brand guidelines 1.0</a>
     <span>Illustrative tide data &middot; Not for navigation</span>
     <span>HTML &middot; CSS &middot; SVG &middot; 0 images &middot; 0 scripts</span>
   </footer>
