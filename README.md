@@ -1,6 +1,6 @@
-# Tide Tables
+# Slack Water
 
-Brand work for **Slack Water**, a tide-tables brand.
+Brand work for **Slack Water**, a tide-tables mobile app.
 
 ## What's here
 
