@@ -1,6 +1,10 @@
-# Tide Tables
+# Slack Water
 
-Brand work for **Slack Water**, a tide-tables brand.
+**Slack Water** is a calm, exact tide app: when the tide turns next, and how high. This repo holds the brand guidelines, the design system and the app.
+
+- Live app: <https://app-slack-water.netlify.app/app/>
+- Brand guidelines: <https://app-slack-water.netlify.app/>
+- Source: <https://github.com/ericthayer/slack-water>
 
 ## What's here
 
@@ -16,7 +20,7 @@ Brand work for **Slack Water**, a tide-tables brand.
   9. Components system strip
 - [`design/`](design/) holds the design system as code: `tokens.json` (source), generated `tokens.css`, `components.css`, an icon sprite, self-hosted fonts, and a WCAG contrast check. See [`design/README.md`](design/README.md).
 - `.claude/launch.json` defines a local preview server for Claude Code.
-- `app/` is the tide-tables app (see below), and `docs/` holds its ADR and spec.
+- `app/` is the Slack Water app (see below), and `docs/` holds its ADR and spec.
 
 Fonts load from Fontshare (Cabinet Grotesk) and Google Fonts (Geist Mono), so the board needs a network connection to render with the intended type.
 
@@ -32,7 +36,7 @@ Then visit <http://localhost:8765/slack-water-brandkit.html>.
 
 ## The app
 
-`app/` is the Slack Water tide-tables app: an installable PWA in vanilla TypeScript and Custom Elements, with no runtime dependencies. It reads NOAA tide predictions, works offline, and is built on the design system in `design/`. Why this stack: [ADR 0001](docs/adr/0001-app-platform-vanilla-ts-web-components-pwa.md). What it does: [PRD](docs/spec/PRD.md). How it fits together: [architecture](docs/spec/architecture.md).
+`app/` is the Slack Water app: an installable PWA in vanilla TypeScript and Custom Elements, with no runtime dependencies. It reads NOAA tide predictions, works offline, and is built on the design system in `design/`. Why this stack: [ADR 0001](docs/adr/0001-app-platform-vanilla-ts-web-components-pwa.md). What it does: [PRD](docs/spec/PRD.md). How it fits together: [architecture](docs/spec/architecture.md).
 
 <p align="center"><img src="docs/media/slack-water-walkthrough.gif" width="320" alt="Click-through of Slack Water on a phone: Point Reyes opens on the next slack at 12:28, then shows Wednesday's tides, sets Point Reyes as home port, searches for and opens Monterey, returns to Point Reyes from the Saved list, and in Settings switches heights to metres and the colour mode to dark."></p>
 
@@ -46,7 +50,7 @@ npm run check      # typecheck, unit tests, build, size budget, e2e + axe
 npm run stations   # refresh public/stations.json and public/currents.json from NOAA
 ```
 
-Netlify builds the app into `dist/app/` and serves the brand board at `/` as before; the app lives at `/app/`.
+Netlify builds the app into `dist/app/` and serves the brand board at `/` as before; the app lives at `/app/`. Production: <https://app-slack-water.netlify.app/>.
 
 ## License
 

@@ -6,7 +6,7 @@
 
 ## Context
 
-Slack Water is a tide-tables app. The brief ranks **web performance and accessibility (WCAG 2.2 AA) above everything else**, with motion and water as the design inspiration. The stated platform preference, in order, was:
+Slack Water is a tide app. The brief ranks **web performance and accessibility (WCAG 2.2 AA) above everything else**, with motion and water as the design inspiration. The stated platform preference, in order, was:
 
 1. Expo Go (native, React Native), if it can actually be built and verified.
 2. Otherwise vanilla TypeScript, unless Web Components, React Native or another framework makes more sense.

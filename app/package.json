@@ -4,6 +4,16 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Slack Water: tide tables PWA. Vanilla TypeScript + Custom Elements.",
+  "homepage": "https://app-slack-water.netlify.app/app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericthayer/slack-water.git",
+    "directory": "app"
+  },
+  "bugs": {
+    "url": "https://github.com/ericthayer/slack-water/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/postbuild.mjs",

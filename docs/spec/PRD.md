@@ -1,4 +1,4 @@
-# PRD: Slack Water, the tide-tables app (v1)
+# PRD: Slack Water, the tide app (v1)
 
 - **Status:** Approved for build
 - **Owner:** Eric
